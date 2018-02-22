@@ -63,7 +63,8 @@ Game.prototype.checkGuess = function (num) {
   } 
   else if (this.pastGuesses.length === 4) {
     this.allIsLost = true;
-    return 'You Lose.';
+    $('h1').text("Oh.  Wow.");
+    return 'You Lost.';
   }
   else {
     
